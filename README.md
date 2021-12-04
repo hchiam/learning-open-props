@@ -2,4 +2,54 @@
 
 Just one of the things I'm learning. https://github.com/hchiam/learning
 
+https://open-props.style
+
 https://github.com/argyleink/open-props
+
+## Setup
+
+https://unpkg.com/open-props
+
+or
+
+```css
+@import "https://unpkg.com/open-props";
+```
+
+which gives you CSS variables like can be used like this:
+
+```css
+html {
+  --text-1: var(--gray-9);
+  --text-2: var(--gray-7);
+
+  @media (--OSdark) {
+    --text-1: var(--gray-1);
+    --text-2: var(--gray-2);
+  }
+}
+
+.push-out {
+  /* you can combine the provided animations! */
+  animation: var(--animation-scale-down), var(--animation-fade-out);
+  animation-timing-function: var(--ease-squish-4);
+}
+
+.card {
+  border-radius: var(--radius-2);
+  padding: var(--size-fluid-3);
+  box-shadow: var(--shadow-2);
+
+  &:hover {
+    box-shadow: var(--shadow-3);
+  }
+
+  @media (--motionOK) {
+    animation: var(--animation-fade-in);
+  }
+}
+
+.blob {
+  border-radius: var(--radius-blob-4);
+}
+```
