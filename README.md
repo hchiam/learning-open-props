@@ -16,7 +16,7 @@ or
 @import "https://unpkg.com/open-props";
 ```
 
-which gives you CSS variables like can be used like this:
+which gives you CSS variables that can be used in regular CSS like this:
 
 ```css
 html {
