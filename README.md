@@ -30,7 +30,7 @@ html {
 }
 
 .push-out {
-  /* you can combine the provided animations! */
+  /* Did you know you can combine animations in native CSS? */
   animation: var(--animation-scale-down), var(--animation-fade-out);
   animation-timing-function: var(--ease-squish-4);
 }
