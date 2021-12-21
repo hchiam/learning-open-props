@@ -70,4 +70,8 @@ http://localhost:1234/
 
 or
 
+https://learning-open-props.surge.sh (via `yarn dev; bash surge.sh`)
+
+or
+
 https://codesandbox.io/s/github/hchiam/learning-open-props
