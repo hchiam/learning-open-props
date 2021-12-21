@@ -17,8 +17,9 @@ function toggleDarkMode() {
 }
 
 function animate(animationClassName, elements, duration) {
+  if (!elements) return;
   if (!duration) duration = 1000;
-  if (elements && !elements.length) {
+  if (!elements.length) {
     elements = [elements];
   }
   elements.forEach(function (element) {
