@@ -54,24 +54,14 @@ html {
 }
 ```
 
-## Demo
+## Demos
 
-```sh
-yarn start
-```
-
-or just
-
-```sh
-yarn dev
-```
-
-http://localhost:1234/
+Locally: `yarn start` or just `yarn dev` will open http://localhost:1234/
 
 or
 
-https://learning-open-props.surge.sh (via `yarn dev; bash surge.sh`)
+Live: https://learning-open-props.surge.sh (via `yarn dev; bash surge.sh`)
 
 or
 
-https://codesandbox.io/s/github/hchiam/learning-open-props
+Live + editable: https://codesandbox.io/s/github/hchiam/learning-open-props
