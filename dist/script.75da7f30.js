@@ -148,11 +148,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
           );
         }
 
-        function animate(animationClassName, elements) {
-          var length =
-            arguments.length > 2 && arguments[2] !== undefined
-              ? arguments[2]
-              : 1000;
+        function animate(animationClassName, elements, duration) {
+          if (!duration) duration = 1000;
 
           if (!elements.length) {
             elements = [elements];
@@ -161,8 +158,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
           elements.forEach(function (element) {
             element.classList.add(animationClassName);
             setTimeout(function () {
+              // remove the animation class so (other) animation can (re-)run:
               element.classList.remove(animationClassName);
-            }, length);
+            }, duration);
           });
         }
       },
@@ -201,7 +199,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
           var hostname = "" || location.hostname;
           var protocol = location.protocol === "https:" ? "wss" : "ws";
           var ws = new WebSocket(
-            protocol + "://" + hostname + ":" + "50649" + "/"
+            protocol + "://" + hostname + ":" + "52747" + "/"
           );
 
           ws.onmessage = function (event) {

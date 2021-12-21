@@ -67,3 +67,7 @@ yarn dev
 ```
 
 http://localhost:1234/
+
+or
+
+https://codesandbox.io/s/github/hchiam/learning-open-props
