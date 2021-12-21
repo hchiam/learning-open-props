@@ -6,6 +6,18 @@ https://open-props.style
 
 https://github.com/argyleink/open-props
 
+## Demos
+
+Locally: `yarn start` or just `yarn dev` will open http://localhost:1234/
+
+or
+
+Live: https://learning-open-props.surge.sh
+
+or
+
+Live + editable: https://codesandbox.io/s/github/hchiam/learning-open-props
+
 ## Setup
 
 https://unpkg.com/open-props
@@ -53,15 +65,3 @@ html {
   border-radius: var(--radius-blob-4);
 }
 ```
-
-## Demos
-
-Locally: `yarn start` or just `yarn dev` will open http://localhost:1234/
-
-or
-
-Live: https://learning-open-props.surge.sh
-
-or
-
-Live + editable: https://codesandbox.io/s/github/hchiam/learning-open-props
