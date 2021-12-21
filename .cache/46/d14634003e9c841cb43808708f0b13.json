@@ -1,0 +1,843 @@
+{
+  "id": "script.js",
+  "dependencies": [
+    {
+      "name": "/Users/howard/Desktop/learning-open-props/package.json",
+      "includedInParent": true,
+      "mtime": 1640041623519
+    }
+  ],
+  "generated": {
+    "js": "animate(\"shake-down\", document.querySelector(\"button\"));\ndocument.querySelector(\"#toggle_dark_mode\").addEventListener(\"click\", function () {\n  toggleDarkMode();\n  animate(\"push-out\", document.querySelector(\"button\"));\n  document.querySelector(\"#toggle_dark_mode\").blur();\n});\n\nfunction toggleDarkMode() {\n  var theme = document.documentElement.getAttribute(\"data-theme\");\n  document.documentElement.setAttribute(\"data-theme\", theme === \"dark\" ? \"light\" : \"dark\");\n}\n\nfunction animate(animationClassName, elements) {\n  var length = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1000;\n\n  if (!elements.length) {\n    elements = [elements];\n  }\n\n  elements.forEach(function (element) {\n    element.classList.add(animationClassName);\n    setTimeout(function () {\n      element.classList.remove(animationClassName);\n    }, length);\n  });\n}"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "name": "animate",
+          "generated": { "line": 1, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 1, "column": 0 }
+        },
+        {
+          "generated": { "line": 1, "column": 7 },
+          "source": "script.js",
+          "original": { "line": 1, "column": 7 }
+        },
+        {
+          "generated": { "line": 1, "column": 8 },
+          "source": "script.js",
+          "original": { "line": 1, "column": 8 }
+        },
+        {
+          "generated": { "line": 1, "column": 20 },
+          "source": "script.js",
+          "original": { "line": 1, "column": 7 }
+        },
+        {
+          "name": "document",
+          "generated": { "line": 1, "column": 22 },
+          "source": "script.js",
+          "original": { "line": 1, "column": 22 }
+        },
+        {
+          "generated": { "line": 1, "column": 30 },
+          "source": "script.js",
+          "original": { "line": 1, "column": 30 }
+        },
+        {
+          "name": "querySelector",
+          "generated": { "line": 1, "column": 31 },
+          "source": "script.js",
+          "original": { "line": 1, "column": 31 }
+        },
+        {
+          "generated": { "line": 1, "column": 44 },
+          "source": "script.js",
+          "original": { "line": 1, "column": 22 }
+        },
+        {
+          "generated": { "line": 1, "column": 45 },
+          "source": "script.js",
+          "original": { "line": 1, "column": 45 }
+        },
+        {
+          "generated": { "line": 1, "column": 53 },
+          "source": "script.js",
+          "original": { "line": 1, "column": 22 }
+        },
+        {
+          "generated": { "line": 1, "column": 54 },
+          "source": "script.js",
+          "original": { "line": 1, "column": 7 }
+        },
+        {
+          "generated": { "line": 1, "column": 55 },
+          "source": "script.js",
+          "original": { "line": 1, "column": 0 }
+        },
+        {
+          "name": "document",
+          "generated": { "line": 2, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 0 }
+        },
+        {
+          "generated": { "line": 2, "column": 8 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 8 }
+        },
+        {
+          "name": "querySelector",
+          "generated": { "line": 2, "column": 9 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 9 }
+        },
+        {
+          "generated": { "line": 2, "column": 22 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 0 }
+        },
+        {
+          "generated": { "line": 2, "column": 23 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 23 }
+        },
+        {
+          "generated": { "line": 2, "column": 42 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 0 }
+        },
+        {
+          "name": "addEventListener",
+          "generated": { "line": 2, "column": 44 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 44 }
+        },
+        {
+          "generated": { "line": 2, "column": 60 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 0 }
+        },
+        {
+          "generated": { "line": 2, "column": 61 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 61 }
+        },
+        {
+          "generated": { "line": 2, "column": 68 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 0 }
+        },
+        {
+          "generated": { "line": 2, "column": 70 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 70 }
+        },
+        {
+          "generated": { "line": 2, "column": 82 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 76 }
+        },
+        {
+          "name": "toggleDarkMode",
+          "generated": { "line": 3, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 4, "column": 2 }
+        },
+        {
+          "name": "toggleDarkMode",
+          "generated": { "line": 3, "column": 2 },
+          "source": "script.js",
+          "original": { "line": 4, "column": 2 }
+        },
+        {
+          "generated": { "line": 3, "column": 16 },
+          "source": "script.js",
+          "original": { "line": 4, "column": 16 }
+        },
+        {
+          "name": "animate",
+          "generated": { "line": 4, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 2 }
+        },
+        {
+          "name": "animate",
+          "generated": { "line": 4, "column": 2 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 2 }
+        },
+        {
+          "generated": { "line": 4, "column": 9 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 9 }
+        },
+        {
+          "generated": { "line": 4, "column": 10 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 10 }
+        },
+        {
+          "generated": { "line": 4, "column": 20 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 9 }
+        },
+        {
+          "name": "document",
+          "generated": { "line": 4, "column": 22 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 22 }
+        },
+        {
+          "generated": { "line": 4, "column": 30 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 30 }
+        },
+        {
+          "name": "querySelector",
+          "generated": { "line": 4, "column": 31 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 31 }
+        },
+        {
+          "generated": { "line": 4, "column": 44 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 22 }
+        },
+        {
+          "generated": { "line": 4, "column": 45 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 45 }
+        },
+        {
+          "generated": { "line": 4, "column": 53 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 22 }
+        },
+        {
+          "generated": { "line": 4, "column": 54 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 9 }
+        },
+        {
+          "generated": { "line": 4, "column": 55 },
+          "source": "script.js",
+          "original": { "line": 5, "column": 2 }
+        },
+        {
+          "name": "document",
+          "generated": { "line": 5, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 6, "column": 2 }
+        },
+        {
+          "name": "document",
+          "generated": { "line": 5, "column": 2 },
+          "source": "script.js",
+          "original": { "line": 6, "column": 2 }
+        },
+        {
+          "generated": { "line": 5, "column": 10 },
+          "source": "script.js",
+          "original": { "line": 6, "column": 10 }
+        },
+        {
+          "name": "querySelector",
+          "generated": { "line": 5, "column": 11 },
+          "source": "script.js",
+          "original": { "line": 6, "column": 11 }
+        },
+        {
+          "generated": { "line": 5, "column": 24 },
+          "source": "script.js",
+          "original": { "line": 6, "column": 2 }
+        },
+        {
+          "generated": { "line": 5, "column": 25 },
+          "source": "script.js",
+          "original": { "line": 6, "column": 25 }
+        },
+        {
+          "generated": { "line": 5, "column": 44 },
+          "source": "script.js",
+          "original": { "line": 6, "column": 2 }
+        },
+        {
+          "name": "blur",
+          "generated": { "line": 5, "column": 46 },
+          "source": "script.js",
+          "original": { "line": 6, "column": 46 }
+        },
+        {
+          "generated": { "line": 5, "column": 50 },
+          "source": "script.js",
+          "original": { "line": 6, "column": 2 }
+        },
+        {
+          "generated": { "line": 6, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 7, "column": 1 }
+        },
+        {
+          "generated": { "line": 6, "column": 1 },
+          "source": "script.js",
+          "original": { "line": 3, "column": 0 }
+        },
+        {
+          "generated": { "line": 8, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 9, "column": 0 }
+        },
+        {
+          "name": "toggleDarkMode",
+          "generated": { "line": 8, "column": 9 },
+          "source": "script.js",
+          "original": { "line": 9, "column": 9 }
+        },
+        {
+          "generated": { "line": 8, "column": 23 },
+          "source": "script.js",
+          "original": { "line": 9, "column": 0 }
+        },
+        {
+          "generated": { "line": 8, "column": 26 },
+          "source": "script.js",
+          "original": { "line": 9, "column": 26 }
+        },
+        {
+          "generated": { "line": 9, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 10, "column": 2 }
+        },
+        {
+          "name": "theme",
+          "generated": { "line": 9, "column": 6 },
+          "source": "script.js",
+          "original": { "line": 10, "column": 8 }
+        },
+        {
+          "generated": { "line": 9, "column": 11 },
+          "source": "script.js",
+          "original": { "line": 10, "column": 13 }
+        },
+        {
+          "name": "document",
+          "generated": { "line": 9, "column": 14 },
+          "source": "script.js",
+          "original": { "line": 10, "column": 16 }
+        },
+        {
+          "generated": { "line": 9, "column": 22 },
+          "source": "script.js",
+          "original": { "line": 10, "column": 24 }
+        },
+        {
+          "name": "documentElement",
+          "generated": { "line": 9, "column": 23 },
+          "source": "script.js",
+          "original": { "line": 10, "column": 25 }
+        },
+        {
+          "generated": { "line": 9, "column": 38 },
+          "source": "script.js",
+          "original": { "line": 10, "column": 16 }
+        },
+        {
+          "name": "getAttribute",
+          "generated": { "line": 9, "column": 39 },
+          "source": "script.js",
+          "original": { "line": 10, "column": 41 }
+        },
+        {
+          "generated": { "line": 9, "column": 51 },
+          "source": "script.js",
+          "original": { "line": 10, "column": 16 }
+        },
+        {
+          "generated": { "line": 9, "column": 52 },
+          "source": "script.js",
+          "original": { "line": 10, "column": 54 }
+        },
+        {
+          "generated": { "line": 9, "column": 64 },
+          "source": "script.js",
+          "original": { "line": 10, "column": 16 }
+        },
+        {
+          "generated": { "line": 9, "column": 65 },
+          "source": "script.js",
+          "original": { "line": 10, "column": 2 }
+        },
+        {
+          "name": "document",
+          "generated": { "line": 10, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 11, "column": 2 }
+        },
+        {
+          "name": "document",
+          "generated": { "line": 10, "column": 2 },
+          "source": "script.js",
+          "original": { "line": 11, "column": 2 }
+        },
+        {
+          "generated": { "line": 10, "column": 10 },
+          "source": "script.js",
+          "original": { "line": 11, "column": 10 }
+        },
+        {
+          "name": "documentElement",
+          "generated": { "line": 10, "column": 11 },
+          "source": "script.js",
+          "original": { "line": 11, "column": 11 }
+        },
+        {
+          "generated": { "line": 10, "column": 26 },
+          "source": "script.js",
+          "original": { "line": 11, "column": 2 }
+        },
+        {
+          "name": "setAttribute",
+          "generated": { "line": 10, "column": 27 },
+          "source": "script.js",
+          "original": { "line": 11, "column": 27 }
+        },
+        {
+          "generated": { "line": 10, "column": 39 },
+          "source": "script.js",
+          "original": { "line": 11, "column": 2 }
+        },
+        {
+          "generated": { "line": 10, "column": 40 },
+          "source": "script.js",
+          "original": { "line": 12, "column": 4 }
+        },
+        {
+          "generated": { "line": 10, "column": 52 },
+          "source": "script.js",
+          "original": { "line": 11, "column": 2 }
+        },
+        {
+          "name": "theme",
+          "generated": { "line": 10, "column": 54 },
+          "source": "script.js",
+          "original": { "line": 13, "column": 4 }
+        },
+        {
+          "generated": { "line": 10, "column": 59 },
+          "source": "script.js",
+          "original": { "line": 13, "column": 9 }
+        },
+        {
+          "generated": { "line": 10, "column": 64 },
+          "source": "script.js",
+          "original": { "line": 13, "column": 14 }
+        },
+        {
+          "generated": { "line": 10, "column": 70 },
+          "source": "script.js",
+          "original": { "line": 13, "column": 4 }
+        },
+        {
+          "generated": { "line": 10, "column": 73 },
+          "source": "script.js",
+          "original": { "line": 13, "column": 23 }
+        },
+        {
+          "generated": { "line": 10, "column": 80 },
+          "source": "script.js",
+          "original": { "line": 13, "column": 4 }
+        },
+        {
+          "generated": { "line": 10, "column": 83 },
+          "source": "script.js",
+          "original": { "line": 13, "column": 33 }
+        },
+        {
+          "generated": { "line": 10, "column": 89 },
+          "source": "script.js",
+          "original": { "line": 11, "column": 2 }
+        },
+        {
+          "generated": { "line": 11, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 15, "column": 1 }
+        },
+        {
+          "generated": { "line": 13, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 0 }
+        },
+        {
+          "name": "animate",
+          "generated": { "line": 13, "column": 9 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 9 }
+        },
+        {
+          "generated": { "line": 13, "column": 16 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 0 }
+        },
+        {
+          "name": "animationClassName",
+          "generated": { "line": 13, "column": 17 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 17 }
+        },
+        {
+          "generated": { "line": 13, "column": 35 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 0 }
+        },
+        {
+          "name": "elements",
+          "generated": { "line": 13, "column": 37 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 37 }
+        },
+        {
+          "generated": { "line": 13, "column": 45 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 0 }
+        },
+        {
+          "generated": { "line": 13, "column": 47 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 62 }
+        },
+        {
+          "generated": { "line": 14, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 62 }
+        },
+        {
+          "name": "length",
+          "generated": { "line": 14, "column": 6 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 47 }
+        },
+        {
+          "generated": { "line": 14, "column": 12 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 62 }
+        },
+        {
+          "generated": { "line": 14, "column": 83 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 56 }
+        },
+        {
+          "generated": { "line": 14, "column": 87 },
+          "source": "script.js",
+          "original": { "line": 17, "column": 62 }
+        },
+        {
+          "generated": { "line": 16, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 18, "column": 2 }
+        },
+        {
+          "generated": { "line": 16, "column": 6 },
+          "source": "script.js",
+          "original": { "line": 18, "column": 6 }
+        },
+        {
+          "name": "elements",
+          "generated": { "line": 16, "column": 7 },
+          "source": "script.js",
+          "original": { "line": 18, "column": 7 }
+        },
+        {
+          "generated": { "line": 16, "column": 15 },
+          "source": "script.js",
+          "original": { "line": 18, "column": 15 }
+        },
+        {
+          "name": "length",
+          "generated": { "line": 16, "column": 16 },
+          "source": "script.js",
+          "original": { "line": 18, "column": 16 }
+        },
+        {
+          "generated": { "line": 16, "column": 22 },
+          "source": "script.js",
+          "original": { "line": 18, "column": 2 }
+        },
+        {
+          "generated": { "line": 16, "column": 24 },
+          "source": "script.js",
+          "original": { "line": 18, "column": 24 }
+        },
+        {
+          "name": "elements",
+          "generated": { "line": 17, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 19, "column": 4 }
+        },
+        {
+          "name": "elements",
+          "generated": { "line": 17, "column": 4 },
+          "source": "script.js",
+          "original": { "line": 19, "column": 4 }
+        },
+        {
+          "generated": { "line": 17, "column": 12 },
+          "source": "script.js",
+          "original": { "line": 19, "column": 12 }
+        },
+        {
+          "generated": { "line": 17, "column": 15 },
+          "source": "script.js",
+          "original": { "line": 19, "column": 15 }
+        },
+        {
+          "name": "elements",
+          "generated": { "line": 17, "column": 16 },
+          "source": "script.js",
+          "original": { "line": 19, "column": 16 }
+        },
+        {
+          "generated": { "line": 17, "column": 24 },
+          "source": "script.js",
+          "original": { "line": 19, "column": 15 }
+        },
+        {
+          "generated": { "line": 17, "column": 25 },
+          "source": "script.js",
+          "original": { "line": 19, "column": 4 }
+        },
+        {
+          "generated": { "line": 18, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 20, "column": 3 }
+        },
+        {
+          "name": "elements",
+          "generated": { "line": 20, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 21, "column": 2 }
+        },
+        {
+          "name": "elements",
+          "generated": { "line": 20, "column": 2 },
+          "source": "script.js",
+          "original": { "line": 21, "column": 2 }
+        },
+        {
+          "generated": { "line": 20, "column": 10 },
+          "source": "script.js",
+          "original": { "line": 21, "column": 10 }
+        },
+        {
+          "name": "forEach",
+          "generated": { "line": 20, "column": 11 },
+          "source": "script.js",
+          "original": { "line": 21, "column": 11 }
+        },
+        {
+          "generated": { "line": 20, "column": 18 },
+          "source": "script.js",
+          "original": { "line": 21, "column": 2 }
+        },
+        {
+          "generated": { "line": 20, "column": 19 },
+          "source": "script.js",
+          "original": { "line": 21, "column": 19 }
+        },
+        {
+          "name": "element",
+          "generated": { "line": 20, "column": 29 },
+          "source": "script.js",
+          "original": { "line": 21, "column": 20 }
+        },
+        {
+          "generated": { "line": 20, "column": 36 },
+          "source": "script.js",
+          "original": { "line": 21, "column": 19 }
+        },
+        {
+          "generated": { "line": 20, "column": 38 },
+          "source": "script.js",
+          "original": { "line": 21, "column": 32 }
+        },
+        {
+          "name": "element",
+          "generated": { "line": 21, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 22, "column": 4 }
+        },
+        {
+          "name": "element",
+          "generated": { "line": 21, "column": 4 },
+          "source": "script.js",
+          "original": { "line": 22, "column": 4 }
+        },
+        {
+          "generated": { "line": 21, "column": 11 },
+          "source": "script.js",
+          "original": { "line": 22, "column": 11 }
+        },
+        {
+          "name": "classList",
+          "generated": { "line": 21, "column": 12 },
+          "source": "script.js",
+          "original": { "line": 22, "column": 12 }
+        },
+        {
+          "generated": { "line": 21, "column": 21 },
+          "source": "script.js",
+          "original": { "line": 22, "column": 4 }
+        },
+        {
+          "name": "add",
+          "generated": { "line": 21, "column": 22 },
+          "source": "script.js",
+          "original": { "line": 22, "column": 22 }
+        },
+        {
+          "generated": { "line": 21, "column": 25 },
+          "source": "script.js",
+          "original": { "line": 22, "column": 4 }
+        },
+        {
+          "name": "animationClassName",
+          "generated": { "line": 21, "column": 26 },
+          "source": "script.js",
+          "original": { "line": 22, "column": 26 }
+        },
+        {
+          "generated": { "line": 21, "column": 44 },
+          "source": "script.js",
+          "original": { "line": 22, "column": 4 }
+        },
+        {
+          "name": "setTimeout",
+          "generated": { "line": 22, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 23, "column": 4 }
+        },
+        {
+          "name": "setTimeout",
+          "generated": { "line": 22, "column": 4 },
+          "source": "script.js",
+          "original": { "line": 23, "column": 4 }
+        },
+        {
+          "generated": { "line": 22, "column": 14 },
+          "source": "script.js",
+          "original": { "line": 23, "column": 14 }
+        },
+        {
+          "generated": { "line": 22, "column": 15 },
+          "source": "script.js",
+          "original": { "line": 23, "column": 15 }
+        },
+        {
+          "generated": { "line": 22, "column": 27 },
+          "source": "script.js",
+          "original": { "line": 23, "column": 21 }
+        },
+        {
+          "name": "element",
+          "generated": { "line": 23, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 24, "column": 6 }
+        },
+        {
+          "name": "element",
+          "generated": { "line": 23, "column": 6 },
+          "source": "script.js",
+          "original": { "line": 24, "column": 6 }
+        },
+        {
+          "generated": { "line": 23, "column": 13 },
+          "source": "script.js",
+          "original": { "line": 24, "column": 13 }
+        },
+        {
+          "name": "classList",
+          "generated": { "line": 23, "column": 14 },
+          "source": "script.js",
+          "original": { "line": 24, "column": 14 }
+        },
+        {
+          "generated": { "line": 23, "column": 23 },
+          "source": "script.js",
+          "original": { "line": 24, "column": 6 }
+        },
+        {
+          "name": "remove",
+          "generated": { "line": 23, "column": 24 },
+          "source": "script.js",
+          "original": { "line": 24, "column": 24 }
+        },
+        {
+          "generated": { "line": 23, "column": 30 },
+          "source": "script.js",
+          "original": { "line": 24, "column": 6 }
+        },
+        {
+          "name": "animationClassName",
+          "generated": { "line": 23, "column": 31 },
+          "source": "script.js",
+          "original": { "line": 24, "column": 31 }
+        },
+        {
+          "generated": { "line": 23, "column": 49 },
+          "source": "script.js",
+          "original": { "line": 24, "column": 6 }
+        },
+        {
+          "generated": { "line": 24, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 25, "column": 5 }
+        },
+        {
+          "generated": { "line": 24, "column": 5 },
+          "source": "script.js",
+          "original": { "line": 23, "column": 14 }
+        },
+        {
+          "name": "length",
+          "generated": { "line": 24, "column": 7 },
+          "source": "script.js",
+          "original": { "line": 25, "column": 7 }
+        },
+        {
+          "generated": { "line": 24, "column": 13 },
+          "source": "script.js",
+          "original": { "line": 23, "column": 14 }
+        },
+        {
+          "generated": { "line": 24, "column": 14 },
+          "source": "script.js",
+          "original": { "line": 23, "column": 4 }
+        },
+        {
+          "generated": { "line": 25, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 26, "column": 3 }
+        },
+        {
+          "generated": { "line": 25, "column": 3 },
+          "source": "script.js",
+          "original": { "line": 21, "column": 2 }
+        },
+        {
+          "generated": { "line": 26, "column": 0 },
+          "source": "script.js",
+          "original": { "line": 27, "column": 1 }
+        }
+      ],
+      "sources": {
+        "script.js": "animate(\"shake-down\", document.querySelector(\"button\"));\n\ndocument.querySelector(\"#toggle_dark_mode\").addEventListener(\"click\", () => {\n  toggleDarkMode();\n  animate(\"push-out\", document.querySelector(\"button\"));\n  document.querySelector(\"#toggle_dark_mode\").blur();\n});\n\nfunction toggleDarkMode() {\n  const theme = document.documentElement.getAttribute(\"data-theme\");\n  document.documentElement.setAttribute(\n    \"data-theme\",\n    theme === \"dark\" ? \"light\" : \"dark\"\n  );\n}\n\nfunction animate(animationClassName, elements, length = 1000) {\n  if (!elements.length) {\n    elements = [elements];\n  }\n  elements.forEach((element) => {\n    element.classList.add(animationClassName);\n    setTimeout(() => {\n      element.classList.remove(animationClassName);\n    }, length);\n  });\n}\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "ee5d6180cd1c907955cfaed9de86fcf9",
+  "cacheData": { "env": {} }
+}

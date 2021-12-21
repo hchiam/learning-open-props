@@ -1,0 +1,18 @@
+/* @media (--motionOK) {
+  .card {
+    animation: var(--animation-fade-in);
+  }
+} */
+
+.push-out {
+  /* Did you know you can combine animations in native CSS? */
+  animation: var(--animation-scale-up), var(--animation-fade-out);
+  animation-timing-function: var(--ease-squish-4);
+}
+
+.shake-down {
+  animation: var(--animation-shake-x), var(--animation-fade-in),
+    var(--animation-slide-in-down);
+}
+
+/*# sourceMappingURL=/animations.43f7d310.css.map */

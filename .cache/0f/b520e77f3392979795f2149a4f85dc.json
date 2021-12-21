@@ -1,0 +1,117 @@
+{
+  "id": "animations.css",
+  "dependencies": [
+    {
+      "name": "_css_loader",
+      "parent": "/Users/howard/Desktop/learning-open-props/demo/animations.css",
+      "resolved": "/Users/howard/Desktop/learning-open-props/node_modules/parcel-bundler/src/builtins/css-loader.js"
+    },
+    {
+      "name": "/Users/howard/Desktop/learning-open-props/package.json",
+      "includedInParent": true,
+      "mtime": 1640041623519
+    }
+  ],
+  "generated": {
+    "css": "/* @media (--motionOK) {\n  .card {\n    animation: var(--animation-fade-in);\n  }\n} */\n\n.push-out {\n  /* Did you know you can combine animations in native CSS? */\n  animation: var(--animation-scale-up), var(--animation-fade-out);\n  animation-timing-function: var(--ease-squish-4);\n}\n\n.shake-down {\n  animation: var(--animation-shake-x), var(--animation-fade-in),\n    var(--animation-slide-in-down);\n}\n",
+    "js": "var reloadCSS = require('_css_loader');\n\nmodule.hot.dispose(reloadCSS);\nmodule.hot.accept(reloadCSS);"
+  },
+  "sourceMaps": {
+    "css": {
+      "mappings": [
+        {
+          "source": "animations.css",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 2, "column": 0 },
+          "generated": { "line": 2, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 3, "column": 0 },
+          "generated": { "line": 3, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 4, "column": 0 },
+          "generated": { "line": 4, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 5, "column": 0 },
+          "generated": { "line": 5, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 6, "column": 0 },
+          "generated": { "line": 6, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 7, "column": 0 },
+          "generated": { "line": 7, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 8, "column": 0 },
+          "generated": { "line": 8, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 9, "column": 0 },
+          "generated": { "line": 9, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 10, "column": 0 },
+          "generated": { "line": 10, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 11, "column": 0 },
+          "generated": { "line": 11, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 12, "column": 0 },
+          "generated": { "line": 12, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 13, "column": 0 },
+          "generated": { "line": 13, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 14, "column": 0 },
+          "generated": { "line": 14, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 15, "column": 0 },
+          "generated": { "line": 15, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 16, "column": 0 },
+          "generated": { "line": 16, "column": 0 }
+        },
+        {
+          "source": "animations.css",
+          "original": { "line": 17, "column": 0 },
+          "generated": { "line": 17, "column": 0 }
+        }
+      ],
+      "sources": {
+        "animations.css": "/* @media (--motionOK) {\n  .card {\n    animation: var(--animation-fade-in);\n  }\n} */\n\n.push-out {\n  /* Did you know you can combine animations in native CSS? */\n  animation: var(--animation-scale-up), var(--animation-fade-out);\n  animation-timing-function: var(--ease-squish-4);\n}\n\n.shake-down {\n  animation: var(--animation-shake-x), var(--animation-fade-in),\n    var(--animation-slide-in-down);\n}\n"
+      },
+      "lineCount": 17
+    }
+  },
+  "error": null,
+  "hash": "c1a77d2c89fca219d7faa04144d66078",
+  "cacheData": { "env": {} }
+}
