@@ -1,6 +1,7 @@
 {
   "name": "learning-template",
   "license": "MIT",
+  "main": "demo/index.html",
   "scripts": {
     "start": "parcel demo/index.html --open",
     "dev": "yarn start",
