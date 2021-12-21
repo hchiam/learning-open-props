@@ -14,6 +14,7 @@ body {
   justify-content: center;
   min-height: 100%;
   margin: 0;
+  font-family: var(--font-sans);
 }
 
 /*# sourceMappingURL=/resets.13a1d461.css.map */
