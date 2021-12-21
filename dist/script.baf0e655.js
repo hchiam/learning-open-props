@@ -129,90 +129,43 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })(
   {
-    "node_modules/parcel-bundler/src/builtins/bundle-url.js": [
+    "src/script.js": [
       function (require, module, exports) {
-        var bundleURL = null;
+        animate("shake-down", document.querySelector("button"));
+        document
+          .querySelector("#toggle_dark_mode")
+          .addEventListener("click", function () {
+            toggleDarkMode();
+            animate("push-out", document.querySelector("button"));
+            document.querySelector("#toggle_dark_mode").blur();
+          });
 
-        function getBundleURLCached() {
-          if (!bundleURL) {
-            bundleURL = getBundleURL();
-          }
-
-          return bundleURL;
-        }
-
-        function getBundleURL() {
-          // Attempt to find the URL of the current script and use that as the base URL
-          try {
-            throw new Error();
-          } catch (err) {
-            var matches = ("" + err.stack).match(
-              /(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g
-            );
-
-            if (matches) {
-              return getBaseURL(matches[0]);
-            }
-          }
-
-          return "/";
-        }
-
-        function getBaseURL(url) {
-          return (
-            ("" + url).replace(
-              /^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/,
-              "$1"
-            ) + "/"
+        function toggleDarkMode() {
+          var theme = document.documentElement.getAttribute("data-theme");
+          document.documentElement.setAttribute(
+            "data-theme",
+            theme === "dark" ? "light" : "dark"
           );
         }
 
-        exports.getBundleURL = getBundleURLCached;
-        exports.getBaseURL = getBaseURL;
-      },
-      {},
-    ],
-    "node_modules/parcel-bundler/src/builtins/css-loader.js": [
-      function (require, module, exports) {
-        var bundle = require("./bundle-url");
+        function animate(animationClassName, elements, duration) {
+          if (!elements) return;
+          if (!duration) duration = 1000;
 
-        function updateLink(link) {
-          var newLink = link.cloneNode();
-
-          newLink.onload = function () {
-            link.remove();
-          };
-
-          newLink.href = link.href.split("?")[0] + "?" + Date.now();
-          link.parentNode.insertBefore(newLink, link.nextSibling);
-        }
-
-        var cssTimeout = null;
-
-        function reloadCSS() {
-          if (cssTimeout) {
-            return;
+          if (!elements.length) {
+            elements = [elements];
           }
 
-          cssTimeout = setTimeout(function () {
-            var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-            for (var i = 0; i < links.length; i++) {
-              if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-                updateLink(links[i]);
-              }
-            }
-
-            cssTimeout = null;
-          }, 50);
+          elements.forEach(function (element) {
+            element.classList.add(animationClassName);
+            setTimeout(function () {
+              // remove the animation class so (other) animation can (re-)run:
+              element.classList.remove(animationClassName);
+            }, duration);
+          });
         }
-
-        module.exports = reloadCSS;
       },
-      {
-        "./bundle-url":
-          "node_modules/parcel-bundler/src/builtins/bundle-url.js",
-      },
+      {},
     ],
     "node_modules/parcel-bundler/src/builtins/hmr-runtime.js": [
       function (require, module, exports) {
@@ -454,7 +407,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     ],
   },
   {},
-  ["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"],
+  ["node_modules/parcel-bundler/src/builtins/hmr-runtime.js", "src/script.js"],
   null
 );
-//# sourceMappingURL=/index.js.map
+//# sourceMappingURL=/script.baf0e655.js.map

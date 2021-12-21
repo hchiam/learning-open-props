@@ -214,6 +214,15 @@ parcelRequire = (function (modules, cache, entry, globalName) {
           "node_modules/parcel-bundler/src/builtins/bundle-url.js",
       },
     ],
+    "src/dark.css": [
+      function (require, module, exports) {
+        var reloadCSS = require("_css_loader");
+
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      },
+      { _css_loader: "node_modules/parcel-bundler/src/builtins/css-loader.js" },
+    ],
     "node_modules/parcel-bundler/src/builtins/hmr-runtime.js": [
       function (require, module, exports) {
         var global = arguments[3];
@@ -457,4 +466,4 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   ["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"],
   null
 );
-//# sourceMappingURL=/index.js.map
+//# sourceMappingURL=/dark.ca0c5e06.js.map

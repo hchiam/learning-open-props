@@ -1,14 +1,12 @@
-(function () {
-  animate("shake-down", document.querySelector("button"));
+animate("shake-down", document.querySelector("button"));
 
-  document
-    .querySelector("#toggle_dark_mode")
-    .addEventListener("click", function () {
-      toggleDarkMode();
-      animate("push-out", document.querySelector("button"));
-      document.querySelector("#toggle_dark_mode").blur();
-    });
-})();
+document
+  .querySelector("#toggle_dark_mode")
+  .addEventListener("click", function () {
+    toggleDarkMode();
+    animate("push-out", document.querySelector("button"));
+    document.querySelector("#toggle_dark_mode").blur();
+  });
 
 function toggleDarkMode() {
   var theme = document.documentElement.getAttribute("data-theme");

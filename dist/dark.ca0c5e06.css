@@ -1,0 +1,34 @@
+/* @media (--OSdark) {
+  html {
+    --text-1: var(--gray-1);
+    --text-2: var(--gray-2);
+
+    --background-main: var(--gray-9);
+    --color-main: var(--gray-1);
+
+    --background-secondary: var(--gray-7);
+    --color-secondary: var(--gray-1);
+  }
+} */
+
+[data-theme="dark"] {
+  --background-image: var(--gradient-23);
+
+  --background-main: var(--gray-9);
+  --color-main: var(--gray-1);
+
+  --background-secondary: var(--gray-7);
+  --color-secondary: var(--gray-1);
+}
+
+[data-theme="light"] {
+  --background-image: var(--gradient-24);
+
+  --background-main: var(--gray-3);
+  --color-main: var(--gray-7);
+
+  --background-secondary: var(--gray-5);
+  --color-secondary: var(--gray-9);
+}
+
+/*# sourceMappingURL=/dark.ca0c5e06.css.map */
