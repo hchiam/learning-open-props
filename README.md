@@ -60,7 +60,7 @@ Locally: `yarn start` or just `yarn dev` will open http://localhost:1234/
 
 or
 
-Live: https://learning-open-props.surge.sh (via `yarn dev; bash surge.sh`)
+Live: https://learning-open-props.surge.sh
 
 or
 
