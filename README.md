@@ -53,3 +53,17 @@ html {
   border-radius: var(--radius-blob-4);
 }
 ```
+
+## Demo
+
+```sh
+yarn start
+```
+
+or just
+
+```sh
+yarn dev
+```
+
+http://localhost:1234/
