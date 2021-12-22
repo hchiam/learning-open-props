@@ -16,7 +16,7 @@ Live: https://learning-open-props.surge.sh
 
 or
 
-Live + editable: https://codesandbox.io/s/github/hchiam/learning-open-props
+Live + editable: https://codesandbox.io/s/github/hchiam/learning-open-props or https://codepen.io/hchiam/pen/wvrqRjY
 
 ## Setup
 
