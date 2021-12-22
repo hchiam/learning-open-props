@@ -20,7 +20,9 @@ Live + editable: https://codesandbox.io/s/github/hchiam/learning-open-props
 
 ## Setup
 
-https://unpkg.com/open-props
+```html
+<link rel="stylesheet" href="https://unpkg.com/open-props"/>
+```
 
 or
 
