@@ -16,12 +16,14 @@ Live: https://learning-open-props.surge.sh
 
 or
 
-Live + editable: https://codesandbox.io/s/github/hchiam/learning-open-props or https://codepen.io/hchiam/pen/wvrqRjY
+Live + editable: https://codesandbox.io/s/github/hchiam/learning-open-props or also
+
+Live + editable: https://codepen.io/hchiam/pen/wvrqRjY
 
 ## Setup
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/open-props"/>
+<link rel="stylesheet" href="https://unpkg.com/open-props" />
 ```
 
 or
